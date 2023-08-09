@@ -1,0 +1,15 @@
+# Maximum height that players are allowed to fly.
+max-height: 256
+
+# Distance to teleport the player downwards if they exceed the maximum height.
+teleport-distance: 2
+
+# Interval in ticks between height checks. (20 ticks = 1 second)
+check-interval: 40
+
+# List of world names that are whitelisted and where the height restriction is applied.
+# By default, it includes the main world, nether, and end.
+world-whitelist:
+  - world
+  - world_nether
+  - world_the_end

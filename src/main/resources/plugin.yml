@@ -1,0 +1,5 @@
+name: FlightHeightRestrictor
+version: '${project.version}'
+main: com.ashkiano.flightheightrestrictor.FlightHeightRestrictor
+api-version: '1.16'
+authors: [AshKiano]
