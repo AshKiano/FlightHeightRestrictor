@@ -42,7 +42,10 @@ public class FlightHeightRestrictor extends JavaPlugin {
             }
         }.runTaskTimer(this, 0, checkInterval);
 
-        this.getLogger().info("Thank you for using the FlightHeightRestrictor plugin! If you enjoy using this plugin, please consider making a donation to support the development. You can donate at: https://donate.ashkiano.com");
+        boolean showDonateMessage = getConfig().getBoolean("ShowDonateMessage", true);
+        if (showDonateMessage) {
+            this.getLogger().info("Thank you for using the FlightHeightRestrictor plugin! If you enjoy using this plugin, please consider making a donation to support the development. You can donate at: https://donate.ashkiano.com");
+        }
     }
 
     private void loadConfig() {
